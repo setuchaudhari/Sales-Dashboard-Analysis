@@ -1,131 +1,54 @@
-# Sales Data Analysis Dashboard
+# Sales Data Analysis – Superstore Retail Dataset
 
-## 📊 Project Overview
+## Project Overview
 
-This project analyzes retail sales data from the **Superstore dataset** to uncover key business insights related to sales performance, profitability, and customer behavior.
-The analysis was performed using **Python, Pandas, and Matplotlib**, and visualizations were generated to highlight trends and opportunities.
+This project analyzes transactional sales data from a retail Superstore dataset to identify key business insights related to revenue generation, profitability, customer behavior, and regional performance.
 
-The goal of this project is to demonstrate practical **data cleaning, exploratory data analysis (EDA), and data visualization skills** that help support data-driven business decisions.
+The objective of this analysis is to demonstrate practical data analytics skills including data preparation, exploratory data analysis, and visualization to support data-driven decision making.
+
+All analysis was performed using Python and organized as a reproducible analytics workflow.
 
 ---
 
-## 🗂 Dataset
+## Dataset Description
 
-The dataset used in this project is the **Superstore retail dataset**, which contains transactional sales data including:
+The dataset contains detailed order-level transactional data including:
 
 * Order information
-* Customer information
-* Product categories
-* Regional sales performance
-* Profit and discount metrics
+* Customer segmentation
+* Product categories and sub-categories
+* Geographic sales distribution
+* Discounts and profitability
 
-Dataset size:
+Dataset summary:
 
-* **9,994 rows**
-* **21 columns**
-
----
-
-## 🛠 Tools & Technologies
-
-* Python
-* Pandas
-* Matplotlib
-* Jupyter Notebook
-* Git & GitHub
+| Metric           | Value  |
+| ---------------- | ------ |
+| Total Records    | 9,994  |
+| Total Features   | 21     |
+| Unique Orders    | 5,009  |
+| Unique Customers | 793    |
+| Total Sales      | $2.29M |
+| Total Profit     | $286K  |
 
 ---
 
-## 📁 Project Structure
+## Analytical Workflow
 
-```
-Sales-Dashboard-Analysis
-│
-├── data
-│   ├── raw
-│   │   └── superstore.csv
-│   └── processed
-│       └── superstore_clean.csv
-│
-├── notebooks
-│   └── eda.ipynb
-│
-├── src
-│   └── data_cleaning.py
-│
-├── reports
-│   └── figures
-│       ├── sales_by_category.png
-│       ├── profit_by_region.png
-│       └── monthly_sales_trend.png
-│
-└── README.md
-```
+The project follows a structured analytics pipeline:
 
----
+### 1. Data Preparation
 
-## 📈 Key Visual Insights
+* Raw dataset ingestion
+* Column normalization
+* Date conversion
+* Duplicate record removal
+* Missing value validation
 
-### Sales by Category
+### 2. Exploratory Data Analysis
 
-![Sales by Category](reports/figures/sales_by_category.png)
+Key exploratory questions addressed:
 
-### Profit by Region
-
-![Profit by Region](reports/figures/profit_by_region.png)
-
-### Monthly Sales Trend
-
-![Monthly Sales Trend](reports/figures/monthly_sales_trend.png)
-
----
-
-## 🔍 Key Findings
-
-* Total sales in the dataset exceeded **$2.29M**.
-* The **Technology category** generated the highest revenue.
-* The **West region** showed the strongest profitability.
-* Sales fluctuate across months, indicating **seasonal demand patterns**.
-
-These insights can help businesses optimize **inventory planning, regional strategies, and product focus**.
-
----
-
-## ▶️ How to Run the Project
-
-1. Clone the repository
-
-```
-git clone https://github.com/setuchaudhari/Sales-Dashboard-Analysis.git
-```
-
-2. Install dependencies
-
-```
-pip install pandas matplotlib jupyter
-```
-
-3. Run the data cleaning script
-
-```
-python src/data_cleaning.py
-```
-
-4. Open the notebook
-
-```
-notebooks/eda.ipynb
-```
-
----
-
-## 👤 Author
-
-Setu Chaudhari
-
-This project is part of my **Data Analytics portfolio**, demonstrating practical skills in:
-
-* Data cleaning
-* Exploratory data analysis
-* Data visualization
-* GitHub project management
+* Which product categories generate the highest revenue?
+* Which geographic regions contribute most to profitability?
+* How does sales perf
